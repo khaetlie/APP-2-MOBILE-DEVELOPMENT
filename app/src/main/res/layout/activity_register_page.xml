@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login_page"
+    android:background="#FFF5E9">
+
+    <!--Back to login button-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backToLoginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="← Back to Login"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/k2d_regular"
+        android:background="?attr/selectableItemBackground"
+        android:textColor="@color/black"
+        android:elevation="0dp"
+        android:textSize="14sp"
+        />
+
+    <!--create an account button-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create an Account"
+        android:fontFamily="@font/k2d_regular"
+        android:layout_marginTop="160dp"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <!--username editText-->
+    <EditText
+        android:id="@+id/usernametext"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:hint="Username"
+        android:fontFamily="@font/k2d_regular"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:textColor="#FFFFFF"
+        app:hintTextColor="#e2e2e2"
+        android:inputType="text"
+        android:background="@drawable/roundbutton"
+        android:textAllCaps="false"
+        android:paddingLeft="14dp"/>
+
+    <!--email editText-->
+    <EditText
+        android:id="@+id/emailtext"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:hint="Email"
+        android:fontFamily="@font/k2d_regular"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="280dp"
+        app:hintTextColor="#e2e2e2"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/roundbutton"
+        android:textAllCaps="false"
+        android:paddingLeft="14dp" />
+
+    <!--password editText-->
+    <EditText
+        android:id="@+id/passwordtext"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:hint="Password"
+        app:hintTextColor="#e2e2e2"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/k2d_regular"
+        android:inputType="textPassword"
+        android:background="@drawable/roundbutton"
+        android:paddingLeft="14dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="340dp" />
+
+    <!--register button-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/registerbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:fontFamily="@font/k2d_regular"
+        android:layout_marginTop="410dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/roundbutton"
+        android:textAllCaps="false"
+        />
+
+    <!--hamster's image-->
+    <ImageView
+        android:layout_width="300dp"
+        android:id="@+id/Hamsty"
+        android:layout_height="300dp"
+        android:src="@drawable/hamstyy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="560dp" />
+
+
+</RelativeLayout>

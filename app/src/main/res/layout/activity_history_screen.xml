@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HistoryScreen"
+    android:background="#FFF5E9">
+
+    <!--Focus sessions completed text-->
+    <TextView
+        android:id="@+id/statsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Focus Sessions Completed: 0"
+        android:textSize="50sp"
+        android:layout_marginTop="100dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/k2d_regular"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <!--Navigation Menu-->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFF5E9"
+        app:menu="@menu/bottom_nav_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:itemIconTint="@null"
+        app:itemTextColor="@null" />
+
+    <!--Stats Button-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/showStatsButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="View Stats"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/roundbutton"
+        app:layout_constraintTop_toBottomOf="@+id/statsTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

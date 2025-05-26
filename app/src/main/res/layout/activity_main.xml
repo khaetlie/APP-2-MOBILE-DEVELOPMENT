@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FFF5E9">
+
+    <!--Welcome text-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/k2d_regular"
+        android:text="Welcome to"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"/>
+
+    <!--Title-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/k2d_semibold"
+        android:text="Pomodoro \nHamster"
+        android:textAlignment="center"
+        android:textSize="45sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+    />
+
+    <!--Hamster's Image-->
+    <ImageView
+        android:layout_width="300dp"
+        android:id="@+id/Hamsty"
+        android:layout_height="300dp"
+        android:src="@drawable/hamstyy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="255dp" />
+
+    <!--Login button-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        app:fontFamily="@font/k2d_regular"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="530dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/roundbutton"
+        android:textAllCaps="false"
+        />
+
+    <!--Register button-->
+    <androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/registerbutton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Register"
+    app:fontFamily="@font/k2d_regular"
+    android:layout_below="@id/loginbutton"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="15dp"
+    android:textColor="#FFFFFF"
+    android:background="@drawable/roundbutton"
+    android:textAllCaps="false"
+    />
+
+
+
+
+
+
+
+</RelativeLayout>
